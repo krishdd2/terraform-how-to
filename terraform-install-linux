@@ -1,0 +1,7 @@
+# TerraformOS Download :
+  https://www.terraform.io/downloads
+
+yum install wget unzip
+wget -o https://releases.hashicorp.com/terraform/1.0.11/terraform_1.0.11_linux_arm64.zip
+unzip ./terraform_1.0.11_linux_arm64.zip –d /usr/local/bin
+terraform –v

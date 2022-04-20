@@ -1,14 +1,13 @@
 ## TerraformOS Download :
 https://www.terraform.io/downloads
 
-## Install by downloading Terraform Binaries:
-
+############## Install by downloading Terraform Binaries ##############
 yum install -y wget unzip
 wget -o https://releases.hashicorp.com/terraform/1.0.11/terraform_1.0.11_linux_arm64.zip
 unzip ./terraform_1.0.11_linux_arm64.zip –d /usr/local/bin
 terraform –v
 
-## Install using YUM Repo: 
+############## Install using YUM Repo ##############
 
 yum install -y yum-utils
 yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo  (For REDHAT)

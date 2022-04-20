@@ -1,7 +1,21 @@
-# TerraformOS Download :
-  https://www.terraform.io/downloads
+## TerraformOS Download :
+https://www.terraform.io/downloads
 
-yum install wget unzip
+## Install by downloading Terraform Binaries:
+
+yum install -y wget unzip
 wget -o https://releases.hashicorp.com/terraform/1.0.11/terraform_1.0.11_linux_arm64.zip
 unzip ./terraform_1.0.11_linux_arm64.zip –d /usr/local/bin
 terraform –v
+
+## Install using YUM Repo: 
+
+yum install -y yum-utils
+yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo  (For REDHAT)
+sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo (For Amzon Linux)
+yum -y install terraform
+terraform -v 
+
+NOTE: Since hashicorp repo is added, the other services i.e packer, vault, nomad and consul also can be installed by yum command.
+
+

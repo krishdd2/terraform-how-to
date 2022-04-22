@@ -10,8 +10,10 @@ terraform –v
 ############## Install using YUM Repo ##############
 
 yum install -y yum-utils
-yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo  (For REDHAT)
-sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo (For Amzon Linux)
+For REDHAT:
+yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo  
+Amzon Linux:
+sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo 
 yum -y install terraform
 terraform -v 
 

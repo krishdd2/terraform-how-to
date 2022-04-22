@@ -4,7 +4,7 @@ https://www.terraform.io/downloads
 ############## Install by downloading Terraform Binaries ##############
 yum install -y wget unzip
 wget https://releases.hashicorp.com/terraform/1.1.9/terraform_1.1.9_linux_amd64.zip
-unzip ./terraform_1.1.9_linux_amd64.zip –d /usr/local/bin
+unzip ./terraform_1.1.9_linux_amd64.zip -d /usr/local/bin
 terraform –v
 
 ############## Install using YUM Repo ##############

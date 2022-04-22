@@ -11,11 +11,11 @@ terraform –v
 
 yum install -y yum-utils
 For REDHAT:
-yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo  
+yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
 Amzon Linux:
-yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo 
+yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
 yum -y install terraform
-terraform -v 
+terraform -v
 
 NOTE: Since hashicorp repo is added, the other services i.e packer, vault, nomad and consul also can be installed by yum command.
 
